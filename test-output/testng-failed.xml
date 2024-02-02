@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="CucumberTestNG(failed)">
+    <classes>
+      <class name="cucumber_TestNg.runner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- cucumber_TestNg.runner -->
+    </classes>
+  </test> <!-- CucumberTestNG(failed) -->
+</suite> <!-- Failed suite [Suite] -->

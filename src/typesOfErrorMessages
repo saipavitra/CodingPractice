@@ -1,0 +1,3 @@
+printStackTrace() - used to print the exception type and line of the exception where it is originating 
+getMessage() - used to print the exception type alone where it will not show any statements like where it is originating.
+toString()- prints the short description of an exception. It does not show the other information (like exception name and stack trace)

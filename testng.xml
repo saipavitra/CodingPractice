@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests"><!-- parallel -> executes the test methods parallelly , thread : if the parallel method is declared thread id will be same and if the parallel method is taken out , thread id will differ based on methods --><!-- parallel: can give it as "classes" or "tests" tests- will executes tests tag in xml-->
+  <listeners><!-- triggers as soon as if any of the below classes fails inbetween-->
+  <listener class-name="testNg.otherRerun"></listener>
+  </listeners> 
+   <!-- <test name="Test" parallel ="methods"> // method -> @ test tag which is present under test in xml file
+  <parameter name="user" value="sai">
+  
+  </parameter>
+  
+    <parameter name="pass" value="pavi">
+  </parameter>
+  <classes>
+  class name ="testNg.runnerTestNG">
+  </class>
+  <class name ="testNg.secondTestNG">
+  </class>
+  </classes>
+  </test> --><!-- Test -->
+   <test name="Test1" preserve-order="true"> <!--   preserves the order of tests given in the class file-->
+   
+  <parameter name="user" value="sai"> <!-- if the parameters is not declared here in test1 but the parameter are declared under Test named 'Test', if the classes of this Test1 uses parameters , and if it is not present , then it will fail , solution is you have provide at suite level -->
+  
+  </parameter>
+  
+    <parameter name="pass" value="pavi">
+
+  </parameter> 
+  <groups>
+  <define name="group1"><!--  define : generally combines the tests and executes the tests if any one of the testing type is present  -->
+  <include name="smoke">
+  </include>
+   <include name="regression">
+  </include>
+  </define>
+   <define name="group2">
+  <include name="sanity">
+  </include>
+   <include name="retest">
+  </include>
+  </define> 
+   <run><!--  runs the below group names -->
+   <include name="group1"><!-- for grouping concepts used under secondTestNG class -->
+   </include>
+   <include name="group2"><!-- for grouping concepts used under secondTestNG class -->
+   </include>
+   <include name="regression"><!-- for grouping concepts used under secondTestNG class -->
+   </include>
+   </run>
+   </groups>
+  <classes>
+  <class name ="testNg.runnerTestNG">
+  </class>
+  <class name ="testNg.secondTestNG">
+  </class>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
+<!-- if both include tag and exclude tag is included in the xml file , exclude will be considered if the groups has same name under run tag -->
+<!-- on triggering this test suite , class which is integrated is triggered alone this-->
+<!-- <test> can used to loop the same TC twice by passing the different parameters -->
+<!--  cross browser testing is achievable via test tag in xml file , where you can define chrome/ firefox/ IE under parameters tag for each test this will redirect to the set up of chrome/firefox based on the user input provided under test tag in xml file-->
+
+<!-- TestNG hierarchy -->
+<!--<suite>
+<test>
+<parameter>
+</parameter>
+<groups>
+<define>
+<include>/<exclude>
+</include>/<exclude>
+</define>
+<run>
+<include>/<exclude>
+</include>/<exclude>
+</run>
+</groups>
+<classes>
+<class>
+</class>
+</classes>
+</test>
+</suite>-->

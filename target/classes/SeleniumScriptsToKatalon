@@ -1,0 +1,8 @@
+Step 1: create a new project in katalon
+Step 2: copy and paste the .java file from eclipse to Include/groovy folder of katalon.
+Step 3: copy and paste the testNg.xml file to Include/groovy folder on creating a new folder inside katalon.
+Step 4: Copy and paste the Java dependencies to gradle file i.e( compile group: 'io.github.bonigarcia' , name: 'webdrivermanager', version: '3.8.1')
+Step 5: build the project by executing gradle katalonCopyDepencies by closing the katalon in the command prompt by changing the location to katalon's project
+Step 6: To execute TestNg framework based create a new test case under testcase folder by scripting few lines i.e: 1) List testSuites=['Include/testNg.xml'] / 2)TestNGKW.runTestNGTestSuites(testSuites, FailureHandling.STOP)
+Step 7: Run the Test Case 
+

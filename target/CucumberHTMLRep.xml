@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.228" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="Verify LoadId is being dispalyed in the Load-Board Page" name="Verify load number in load details page - Example #1.1" time="0.045">
+<failure/>
+<system-out><![CDATA[
+Given RunnerClass "SaiPavitra"..............................................undefined
+]]></system-out>
+</testcase>
+<testcase classname="Verify LoadId is being dispalyed in the Load-Board Page" name="Verify load number in load details page - Example #1.2" time="0.004">
+<failure/>
+<system-out><![CDATA[
+Given RunnerClass "Yugesh"..................................................undefined
+]]></system-out>
+</testcase>
+</testsuite>

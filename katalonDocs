@@ -1,0 +1,1 @@
+self healing mechanism : when the locator is broken(unable to find), it tries to find the pre-configured locators
