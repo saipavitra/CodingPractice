@@ -1,1 +1,89 @@
+C# 
+Class - blueprint where many of the types will be there such as Objects , methods Constructors etc.
 
+Object - is the instance where it will have certain storage size designed as per Class
+
+Console - part of class . console has many methods such as 
+Console.Write("helo");
+Console.read(); // as an output ,console will be opened with helo wordings being inserted over there and user can provide inputs from there and press Enter to close the console window
+
+Syntax of a sample code
+using System.Collections.Generic:
+using System.Text;
+
+namespace CSharp 
+{
+class Program
+{
+//can access methods using this declaraction
+Program p= new Program();
+
+//entry point of ur program
+static void Main(string[] args)
+{
+Console.Write("hello");
+Console.Read();
+}
+}
+}
+
+here "namespace"- mechanism used to organize and group related code elements, such as classes, structs, interfaces, enums, and delegates. Its primary purposes are:
+Code Organization
+
+First class
+class Program
+{
+static void Main(string[] args)
+{
+TestClass1 class1= new TestClass1(); // accessing the other class methods
+class1.TestClass1("passed");//passing string values to second class value 
+class1.TestClass2("failed");
+
+}
+}
+
+second Class
+class TestClass1
+{
+public void TestClass1(string result)
+{
+Console.WriteLine("executing method 1"+ result);
+}
+public void TestClass2(string result)
+{
+Console.WriteLine("executing methd 2"+ result);
+}
+}
+
+alternate option - creation of set methods 
+second Class
+class TestClass1
+{
+private i =0;
+public void SetValue(int value)
+{
+i=value
+}
+public void GetValue()
+{
+Console.WriteLine("The value of i :"+i);
+}
+}
+
+First class
+class Program
+{
+static void Main(string[] args)
+{
+TestClass1 class1= new TestClass1(); // accessing the other class methods
+class1.SetValue(10);//passing string values to second class value 
+class1.GetValue();
+
+TestClass1 class2= new TestClass1(); // accessing the other class methods
+class2.SetValue(20);//passing string values to second class value 
+class2.GetValue();
+
+//output : The value of i :10 
+           The value of i :20
+}
+}
