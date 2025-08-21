@@ -87,3 +87,23 @@ class2.GetValue();
            The value of i :20
 }
 }
+
+pre-defined types
+Int (int 16, 32, 64) , String , bool, double
+string name = "KARTHIK"
+Console.WriteLine(name.ToLower());//output : karthik
+Console.Read();
+bool test= true
+Console.WriteLine(test);// output: true
+Console.Read();
+
+implicit conversion - no data loss:
+Int16 salry = 32767
+int salaryincrement = salry
+explicit conversion - some data loss will happen
+double incometax= 2345.234
+Console.WriteLine((int)incometax) // output : 2345
+alternate - var incometax= 2345.234
+Console.WriteLine(incometax.GetType().Name);// Double
+
+Note : Object is the superclass of all other class 
