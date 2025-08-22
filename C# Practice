@@ -118,3 +118,43 @@ public void test2(int b,int c)
 int result= b+c;
 }
 
+conditional statements 
+selection statements - if , else , switch , case
+iteration statements - do , for , foreach, in, while
+break statements - break , continue , default ,goto , return , yield
+exceptional handling - throw , try- catch , try-finally, try- catch-finally
+
+examples:
+bool= true;
+if(true)
+{
+Console.WriteLine("testcase is passed");
+}else
+{
+Console.WriteLine("testcase is failed");
+}
+
+/////////////
+
+string testcase= "Passed"
+if(testcase =="Passed")
+{
+Console.WriteLine("testcase is passed");
+}
+else
+{
+Console.WriteLine("testcase is failed");
+}
+console.read();
+
+//////
+String test= "passed";
+switch(test)
+{
+case "passed":
+Console.WriteLine("passed ....");
+break;
+case "failed":
+Console.WriteLine("failed...");
+break;
+}
