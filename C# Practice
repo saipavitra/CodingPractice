@@ -158,3 +158,16 @@ case "failed":
 Console.WriteLine("failed...");
 break;
 }
+
+for each loop
+string[] testname= new string [] {"name1", "name2"}
+foreach (var testcase in testname)
+{
+Console.WriteLine("passing the testcase"+testcase);
+}
+
+int[] number =new int[]{ 100, 101, 102};
+for (int i=0;i<=number.Length;i++e)
+{
+Console.WriteLine(number[0]);
+}
