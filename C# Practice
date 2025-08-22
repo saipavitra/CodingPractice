@@ -107,3 +107,5 @@ alternate - var incometax= 2345.234
 Console.WriteLine(incometax.GetType().Name);// Double
 
 Note : Object is the superclass of all other class 
+
+
