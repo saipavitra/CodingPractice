@@ -212,3 +212,23 @@ foreach(var user in userinfo)
 Console.WriteLine("value passed is "+user);
 }
 }
+
+Enum - if normal strings are used while passing those values , it could be case-sensitive , hence enum are used
+enum Browser
+{
+Chrome,
+Firefox,
+IE
+}
+public static void Main(string[] args)
+{
+Console.WriteLine(getBrowserName(Browser.Firefox));
+Console.Read();// output: firefox is opening
+}
+public static string getbrowserName(Browser browser)
+{
+if(browser==Browser.Firefox)
+return "firefox is opening";
+else if(browser==Browser.chrome)
+return "Chrome is opening"
+}
