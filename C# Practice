@@ -232,3 +232,6 @@ return "firefox is opening";
 else if(browser==Browser.chrome)
 return "Chrome is opening"
 }
+
+interface - Interface iWebdriver
+inheritance - Class Chrome: iWebdriver
