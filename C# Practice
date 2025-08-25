@@ -183,3 +183,32 @@ foreach(var i in table.Keys)
 Console.WriteLine("value passed is "+i);
 }
 }
+
+Generic Collections is present in System.Collections.Generic namespace
+
+types of generic<> collection
+List<>
+Doctionary<TKey,TValue>
+Stack<T> etc.
+
+why generic ? -> because non generic deals with 1 key and 1 value hence we prefer generic as it deals with 1 key and multiple values,so here comes the dictionary
+public static void genericCollection()
+{
+string user1[]= {"karthick", "30", "IT"};
+string user2[]= {"John", "26", "Tech"};
+string user3[] ={"Don", "33", "BA"};
+
+Dictionary<int, string[]> dict= new Dictionary<int, string[]>();
+
+dict.Add(1, user1);
+dict.Add(2, user2);
+dict.Add(3, user3);
+
+foreach(var i in dict)
+{
+string[] userinfo=i.Value //fetches all the values of i's values
+foreach(var user in userinfo)
+{
+Console.WriteLine("value passed is "+user);
+}
+}
